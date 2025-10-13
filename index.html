@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador da Sorte</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Primeiro passo (Título)-->
+    <header>
+        <h1 class="h1-random">GERADOR DA SORTE</h1>
+    </header>
+
+    <!-- Segundo passo (Logotipo - imagem)-->
+    <img src="img/Gerador da Sorte.png" alt="Imagem representativa do Gerador da Sorte" />
+    
+    <main>
+        <!-- Terceiro passo (Botões - participante - inserir - limpar)-->
+        <div>
+            <fieldset>
+                <input type="text" name="input-list-generator" id="input-list" placeholder="nome do participante" />
+                <button class="button" id="add-btn" type="button" onclick="clickMe()">inserir</button>
+                <button class="button" type="reset" onclick="resetBtn()">limpar</button>
+            </fieldset>
+        </div>
+
+        <!-- Quarto passo (Participante + nome)-->
+        <div class="tabela">
+            <h2 id="contenders">PARTICIPANTES</h2>
+            <ul id="lista"></ul>
+        </div>
+
+        <!-- Quinto passo (Clique em sortear)-->
+        <div>
+            <h2 id="result">CLIQUE PARA SORTEAR</h2>
+            <button class="button" id="run-event" type="button" onclick="randomGen()">sortear</button>
+        </div>
+        <div id="win"></div>
+        <div id="reload"></div>
+    </main>
+
+    <!-- Sexto passo (autor e links do projeto)-->
+    <footer>
+        <p class="dev-name">@desenvolvido por Daniel Fealsi</p>
+        <div class="imagem">
+            <a href="https://github.com/Danfas19402/Rifly" target="_blank" title="Visit my Github page">
+                <img id="git-img" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-outline-512.png" alt="github image"/>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-ferreira1969/" target="_blank" title="Visit my LinkedIn">
+                <img id="lkdin-img" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png" alt="linkedin image"/>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
