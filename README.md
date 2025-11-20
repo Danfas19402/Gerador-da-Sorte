@@ -1,4 +1,4 @@
-Gerador da Sorte
+🎯 Gerador da Sorte
 O Gerador da Sorte é uma aplicação web simples e intuitiva feita para sorteios aleatórios entre os participantes. Basta inserir os nomes, clicar em "Sortear" e o sistema escolhe um vencedor de forma imparcial!
 
 Características
